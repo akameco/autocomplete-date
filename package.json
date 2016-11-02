@@ -1,0 +1,33 @@
+{
+  "name": "autocomplete-date",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "autocomplete date",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "author": "akameco <akameco.t@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akameco/autocomplete-date.git"
+  },
+  "keywords": [
+    "date",
+    "autocomplete"
+  ],
+  "bugs": {
+    "url": "https://github.com/akameco/autocomplete-date/issues"
+  },
+  "homepage": "https://github.com/akameco/autocomplete-date#readme",
+  "dependencies": {
+    "moment": "^2.15.2"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  }
+}
