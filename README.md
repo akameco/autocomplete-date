@@ -2,7 +2,7 @@
 
 > autocomplete date
 
-<img src="screenshot.gif"/>
+<img src="https://raw.githubusercontent.com/akameco/autocomplete-date/master/screenshot.gif"/>
 
 ## Install
 
