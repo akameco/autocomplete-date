@@ -30,5 +30,5 @@ const provider = {
 
 export default {
 	provide: () => provider,
-		activate: () => null
+	activate: () => null
 };
