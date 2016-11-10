@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-date",
   "main": "index.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "autocomplete date",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
