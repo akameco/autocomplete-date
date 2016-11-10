@@ -10,7 +10,7 @@ const provider = {
 		if (/^(date|dd)$/.test(prefix)) {
 			text = moment().format('YYYY-MM-DD');
 		} else if (/^(time|dt)$/.test(prefix)) {
-			text = moment().format('hh:mm:ss')
+			text = moment().format('HH:mm:ss')
 		} else if (/^now$/.test(prefix)) {
 			text = moment().format('YYYY-MM-DD hh:mm:ss')
 		} else {
