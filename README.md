@@ -17,10 +17,12 @@ Provide snippet
 `YYYY-MM-DD`
 
 ### time (dt)
-`hh:mm:ss`
+`HH:mm:ss`
 
 ### now
-`YYYY-MM-DD hh:mm:ss`
+`YYYY-MM-DD HH:mm:ss`
+
+See [Moment.js | Docs](http://momentjs.com/docs/#/displaying/).
 
 ## License
 
