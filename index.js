@@ -1,29 +1,36 @@
 'use babel';
 import moment from 'moment';
 
+const format = prefix => {
+	if (/^(date|dd)$/.test(prefix)) {
+		return moment().format('YYYY-MM-DD');
+	}
+	if (/^(time|dt)$/.test(prefix)) {
+		return moment().format('HH:mm:ss');
+	}
+	if (/^now$/.test(prefix)) {
+		return moment().format('YYYY-MM-DD HH:mm:ss');
+	}
+	return null;
+};
+
 const provider = {
 	selector: '*',
 	inclusionPriority: 1,
 	getSuggestions: ({prefix}) => {
-		let text = null;
-
-		if (/^(date|dd)$/.test(prefix)) {
-			text = moment().format('YYYY-MM-DD');
-		} else if (/^(time|dt)$/.test(prefix)) {
-			text = moment().format('HH:mm:ss')
-		} else if (/^now$/.test(prefix)) {
-			text = moment().format('YYYY-MM-DD HH:mm:ss')
-		} else {
-			return Promise.resolve(null);
-		}
-
 		return new Promise(resolve => {
+			const text = format(prefix);
+
+			if (!text) {
+				return resolve(null);
+			}
+
 			const suggestion = {
 				text,
 				displayText: text,
 				replacementPrefix: prefix
 			};
-			resolve([suggestion])
+			resolve([suggestion]);
 		});
 	}
 };
