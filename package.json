@@ -29,5 +29,11 @@
         "2.0.0": "provide"
       }
     }
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "esnext": true
   }
 }
