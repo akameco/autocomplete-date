@@ -12,6 +12,9 @@ const format = prefix => {
 		return moment().format('YYYY-MM-DD HH:mm:ss');
 	}
 	return null;
+	if (/^ldd$/.test(prefix)) {
+		return moment().format('ll');
+	} 
 };
 
 const provider = {
