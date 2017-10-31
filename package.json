@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/akameco/autocomplete-date#readme",
   "dependencies": {
-    "moment": "^2.15.2"
+    "moment": "^2.19.1"
   },
   "providedServices": {
     "autocomplete.provider": {
