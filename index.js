@@ -15,6 +15,9 @@ const format = prefix => {
 		return moment().format('ll');
 	}
 	return null;
+	if (/^ldd$/.test(prefix)) {
+		return moment().format('ll');
+	} 
 };
 
 const provider = {
