@@ -11,6 +11,9 @@ const format = prefix => {
 	if (/^now$/.test(prefix)) {
 		return moment().format('YYYY-MM-DD HH:mm:ss');
 	}
+	if (/^ldd$/.test(prefix)) {
+		return moment().format('ll');
+	}
 	return null;
 };
 
