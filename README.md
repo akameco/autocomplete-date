@@ -1,5 +1,7 @@
 # autocomplete-date package
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/autocomplete-date.svg)](https://greenkeeper.io/)
+
 > autocomplete date
 
 <img src="https://raw.githubusercontent.com/akameco/autocomplete-date/master/screenshot.gif"/>
